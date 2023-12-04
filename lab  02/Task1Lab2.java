@@ -3,23 +3,23 @@ public class Task1Lab2 {
 public static void main(String[] args) {
 
 DoubleLinkedList list = new DoubleLinkedList();
-
-list.insertAtBeginning("aa");
-list.insertAtBeginning("bb");
-list.insertAtBeginning("cc");
-list.insertAtBeginning("dd");
-list.insertAtEnd("Ds");
+list.insertAtEnd("1");
+list.insertAtEnd("2");
+list.insertAtEnd("3");
+list.insertAtEnd("4");
+list.insertAtEnd("5");
+list.insertAtEnd("7");
+list.insertAtEnd("8");
+DoubleLinkedList.Node bold = new DoubleLinkedList.Node("6");
+list.insertAfterName("5", bold);
 list.printAll();
-list.insertAtEnd("ee");
-DoubleLinkedList.Node bold = new DoubleLinkedList.Node("tt");
-list.insertAfterName("bb", bold);
-list.printAll();
 
+/* 
 DoubleLinkedList.Node old = new DoubleLinkedList.Node("RR");
 list.insertBeforeName("cc", old);
 list.printAll();
 list.makeCircular();
-
+*/
 }
 }
 
@@ -141,6 +141,7 @@ temp = temp.next;
 
 }
 
+System.out.println(temp.data);
 
 node.prev = temp;
 
